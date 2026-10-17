@@ -33,6 +33,9 @@ android {
 }
 
 dependencies {
+    implementation("androidx.fragment:fragment-ktx:1.8.9")
+    implementation("androidx.navigation:navigation-fragment-ktx:2.9.6")
+    implementation("androidx.navigation:navigation-ui-ktx:2.9.6")
     implementation("androidx.recyclerview:recyclerview:1.4.0")
     implementation("androidx.room:room-runtime:2.8.5")
     implementation("androidx.room:room-ktx:2.8.5")

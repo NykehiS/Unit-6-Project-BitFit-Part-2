@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/nav_dashboard">
+
+    <!-- My dashboard is the first screen that opens. -->
+    <fragment
+        android:id="@+id/nav_dashboard"
+        android:name="com.example.workouttracker.DashboardFragment"
+        android:label="Dashboard" />
+
+    <!-- This screen displays my saved workout entries. -->
+    <fragment
+        android:id="@+id/nav_workouts"
+        android:name="com.example.workouttracker.WorkoutsFragment"
+        android:label="Workouts" />
+
+</navigation>
