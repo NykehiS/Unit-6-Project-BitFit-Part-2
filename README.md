@@ -1,4 +1,4 @@
-# Android Project 5 - Bitfit
+# Android Project 6 - Bitfit
 
 Submitted by: **Nykehi Sanders**
 
@@ -10,34 +10,42 @@ Time spent: **9** hours spent in total
 
 The following **required** functionality is completed:
 
-- [x] **At least one health metric is tracked (based on user input)**
-  - Chosen metric(s): `Exercise sessions, workout duration, and calories burned`
-- [x] **There is a "create entry" UI that prompts users to make their daily entry**
-- [x] **New entries are saved in a database and then updated in the RecyclerView**
-- [x] **On application restart, previously entered entries are preserved (i.e., are *persistent*)**
- 
+- [x] **Use at least 2 Fragments**
+  - Created a Dashboard Fragment and a Workouts Fragment.
+- [x] **Create a new dashboard fragment where users can see a summary of their entered data**
+  - The dashboard displays total workouts, average workout duration, average calories per workout, and total calories burned.
+- [x] **Use one of the Navigation UI Views (BottomNavigation, Drawer Layout, Top Bar) to move between the fragments**
+  - Added a bottom navigation bar to switch between the Dashboard and Workouts screens.
+
+## Optional Features
+
 The following **optional** features are implemented:
 
-- [x] **Create a UI for tracking averages and trends in metrics**
-- [x] **Improve and customize the user interface through styling and coloring**
+- [ ] **Add a more advanced UI (e.g., Graphing) for tracking trends in metrics**
+- [ ] **Implement daily notifications to prompt users to fill in their data**
+
+## Additional Features
 
 The following **additional** features are implemented:
 
-- [x] Added a progress dashboard that displays the total number of workouts, average workout duration, average calories burned, and total calories burned.
-- [x] Added input validation to prevent users from saving incomplete workout entries.
-- [x] Added an empty-state message when the user has not entered any workouts yet.
+- [x] Added a workout entry form to record workouts.
+- [x] Displayed saved workouts using a RecyclerView.
+- [x] Used a Room database to store workout entries locally.
+- [x] Designed the app with a pink color theme.
+- [x] Added a message for when no workouts have been recorded.
 
 ## Video Walkthrough
 
 Here's a walkthrough of implemented user stories:
 
-<img width="414" height="861" alt="BitFit Demo" src="https://github.com/user-attachments/assets/5abec83c-1c02-4233-b3fc-45dfe5ddc0c1" />
+<img width="414" height="861" alt="BitFit Part 2" src="https://github.com/user-attachments/assets/c560c279-e291-4853-af99-802710f1d484" />
 
-GIF created with **ScreenToGif**
+
+GIF created with ScreenToGif for Windows.
 
 ## Notes
 
-One challenge I encountered while completing this project was setting up the Room database and connecting the saved workout entries to the RecyclerView. I also ran into issues with some of the XML IDs not being recognized in my Kotlin files, which caused unresolved reference errors. After making sure the IDs in my layouts matched the IDs being referenced in my activities and rebuilding the project, I was able to get everything working correctly and perfect. This project also helped me gain more experience working with Room databases, DAOs, entities, RecyclerViews, and storing persistent data in an Android application. I also learned how to calculate information from saved database entries to create a progress dashboard showing workout averages and totals.
+One challenge I encountered while building the app was connecting the bottom navigation bar to the navigation graph and making sure each fragment opened correctly. I also worked on connecting the workout data saved in the database to the dashboard so the statistics could update based on the user's recorded workouts.
 
 ## License
 
